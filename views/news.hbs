@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row" style="padding-top: 50px; margin-bottom: unset;">
+        {{#each news}}
+        <div class="col s12 m6">
+            <div class="card" style="margin-top: unset; transform: unset; right: unset; text-align: unset;">
+                <div class="card-image">
+                    <img src="{{photo}}">
+                </div>
+                <div class="card-content">
+                    <span>{{about}}</span>
+                    <a href="/news/view" class="card-title">{{title}}</a>
+                    <p>By: {{author}}</p>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+        {{!-- {{#if admin}} --}}
+        <a href="/news/add" class="btn-floating halfway-fab"
+            style="bottom: 50px; right: 50px; width: 50px; height: 50px; background-color: black;"><i
+                style="font-size: 50px;">+</i></a>
+    </div>
+</div>

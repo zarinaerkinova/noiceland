@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="row">
+    <div class="col s12 m7">
+      <div class="card horizontal">
+        <div class="card-stacked">
+          <div class="card-content admin">
+            {{#if error}}
+            <p style="color: red; font-family: 'Source Serif Pro';">{{error}}</p>
+            {{/if}}
+            <div class="row">
+              <form class="col s12" action="/signup" method="post">
+                <div class="row">
+                  <div class="col s6">
+                    <input placeholder="First Name" type="text" name="firstName" id="firstName" required>
+                    <label for="firstName"></label>
+                  </div>
+                  <div class="col s6">
+                    <input placeholder="Last Name" type="text" name="lastName" id="lastName">
+                    <label for="lastName"></label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12">
+                    <input placeholder="Image" type="text" name="img" id="img">
+                    <label for="img"></label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12">
+                    <input placeholder="Telephone" type="tel" name="tel" id="tel" required>
+                    <label for="tel"></label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12">
+                    <input placeholder="Password" type="password" name="password" id="password" required>
+                    <label for="password"></label>
+                  </div>
+                </div>
+                <button style="cursor: pointer;" class="adminBtn" type="submit">Sign up</button>
+              </form>
+            </div>
+          </div>
+          <div class="card-action">
+            <span style="font-family: 'Source Serif Pro'; color: #666666;">Have an account?<a href="/login"
+                style="font-family: 'Libre Franklin'; color: #0091ff; margin-left: 2px;"> Sign in</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
